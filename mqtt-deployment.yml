@@ -15,7 +15,7 @@ spec:
         app: mqtt
     spec:
       containers:
-        - image: muhammadb/xbu-mqtt
+        - image: muhammadb/xbu-mqtt:prodv6
           name: mqtt
           ports:
             - containerPort: 1883
