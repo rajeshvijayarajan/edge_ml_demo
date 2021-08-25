@@ -1,0 +1,79 @@
+# The specified storage capacity is ignored. The PVC is matched with a statically provisoned PV using the volumeName
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app: volume_input_claim
+  name: volume_input_claim
+spec:
+  volumeName: "input-volume"
+  storageClassName: ""
+  accessModes:
+    - ReadMany
+  resources:
+    requests:
+      storage: 5G
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app: volume_model_claim
+  name: volume_model_claim
+spec:
+  volumeName: "model-volume"
+  storageClassName: ""
+  accessModes:
+    - ReadMany
+  resources:
+    requests:
+      storage: 5G
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app: volume_archive_claim
+  name: volume_archive_claim
+spec:
+  volumeName: "archive-volume"
+  storageClassName: ""
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5G
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app: volume_telemetry_claim
+  name: volume_telemetry_claim
+spec:
+  volumeName: "telemetry-volume"
+  storageClassName: ""
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5G
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app: volume_outliers_claim
+  name: volume_outliers_claim
+spec:
+  volumeName: "outliers-volume"
+  storageClassName: ""
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5G
