@@ -20,7 +20,7 @@ spec:
               value: plant-disease-model-complete.pth
             - name: THRESHOLD
               value: "90"
-          image: muhammadb/xbu-ml-python:prodv6
+          image: muhammadb/xbu-ml-python:prodv7
           name: ml-python
           volumeMounts:
             - mountPath: /app/inputs/test
