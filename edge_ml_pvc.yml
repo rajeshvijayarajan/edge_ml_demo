@@ -4,7 +4,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: input-volume-claim
 spec:
-  volumeName: "input-volume"
+  volumeName: input-volume
   storageClassName: ""
   accessModes:
     - ReadOnlyMany
@@ -18,7 +18,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: model-volume-claim
 spec:
-  volumeName: "model-volume"
+  volumeName: model-volume
   storageClassName: ""
   accessModes:
     - ReadOnlyMany
@@ -32,7 +32,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: archive-volume-claim
 spec:
-  volumeName: "archive-volume"
+  volumeName: archive-volume
   storageClassName: ""
   accessModes:
     - ReadWriteOnce
@@ -46,7 +46,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: telemetry-volume-claim
 spec:
-  volumeName: "telemetry-volume"
+  volumeName: telemetry-volume
   storageClassName: ""
   accessModes:
     - ReadWriteOnce
@@ -60,7 +60,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: outliers-volume-claim
 spec:
-  volumeName: "outliers-volume"
+  volumeName: outliers-volume
   storageClassName: ""
   accessModes:
     - ReadWriteOnce
