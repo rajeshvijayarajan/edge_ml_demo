@@ -18,7 +18,7 @@ spec:
         - env:
             - name: CHOKIDAR_USEPOLLING
               value: "true"
-          image: muhammadb/xbu-ui:prodv7
+          image: muhammadb/xbu-ui:prodv8
           name: ui
           ports:
             - containerPort: 3000
