@@ -2,9 +2,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  labels:
-    app: volume_input_claim
-  name: volume_input_claim
+  name: input-volume-claim
 spec:
   volumeName: "input-volume"
   storageClassName: ""
@@ -18,9 +16,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  labels:
-    app: volume_model_claim
-  name: volume_model_claim
+  name: model-volume-claim
 spec:
   volumeName: "model-volume"
   storageClassName: ""
@@ -34,9 +30,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  labels:
-    app: volume_archive_claim
-  name: volume_archive_claim
+  name: archive-volume-claim
 spec:
   volumeName: "archive-volume"
   storageClassName: ""
@@ -50,9 +44,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  labels:
-    app: volume_telemetry_claim
-  name: volume_telemetry_claim
+  name: telemetry-volume-claim
 spec:
   volumeName: "telemetry-volume"
   storageClassName: ""
@@ -66,9 +58,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  labels:
-    app: volume_outliers_claim
-  name: volume_outliers_claim
+  name: outliers-volume-claim
 spec:
   volumeName: "outliers-volume"
   storageClassName: ""
