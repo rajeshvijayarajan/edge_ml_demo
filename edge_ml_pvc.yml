@@ -7,7 +7,7 @@ spec:
   volumeName: "input-volume"
   storageClassName: ""
   accessModes:
-    - ReadMany
+    - ReadOnlyMany
   resources:
     requests:
       storage: 5G
@@ -21,7 +21,7 @@ spec:
   volumeName: "model-volume"
   storageClassName: ""
   accessModes:
-    - ReadMany
+    - ReadOnlyMany
   resources:
     requests:
       storage: 5G
