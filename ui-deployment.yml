@@ -25,10 +25,10 @@ spec:
           stdin: true
           volumeMounts:
             - mountPath: /app/inputs/test
-              name: volume_input_claim
+              name: input-volume-claim
       imagePullSecrets:
         - name: regcred 
       volumes:
-        - name: volume_input_claim
+        - name: input-volume-claim
           persistentVolumeClaim:
-            claimName: volume_input_claim
+            claimName: input-volume-claim
