@@ -17,7 +17,7 @@ spec:
       containers:
         - env:
             - name: MODEL
-              value: plant-disease-model-complete.pth
+              value: plant-disease-model-complete-v1.pth
             - name: THRESHOLD
               value: "90"
           image: muhammadb/xbu-ml-python:prodv7
