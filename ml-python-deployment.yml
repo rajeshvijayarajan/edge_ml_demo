@@ -24,31 +24,31 @@ spec:
           name: ml-python
           volumeMounts:
             - mountPath: /app/inputs/test
-              name: volume_input_claim
+              name: input-volume-claim
             - mountPath: /app/models
-              name: volume_model_claim
+              name: model-volume-claim
             - mountPath: /app/archive
-              name: volume_archive_claim
+              name: archive-volume-claim
             - mountPath: /app/telemetry
-              name: volume_telemetry_claim
+              name: telemetry-volume-claim
             - mountPath: /app/outliers
-              name: volume_outliers_claim
+              name: outliers-volume-claim
       imagePullSecrets:
         - name: regcred
       volumes:
-        - name: volume_input_claim
+        - name: input-volume-claim
           persistentVolumeClaim:
-            claimName: volume_input_claim
-        - name: volume_model_claim
+            claimName: input-volume-claim
+        - name: model-volume-claim
           persistentVolumeClaim:
-            claimName: volume_model_claim
-        - name: volume_archive_claim
+            claimName: model-volume-claim
+        - name: archive-volume-claim
           persistentVolumeClaim:
-            claimName: volume_archive_claim
-        - name: volume_telemetry_claim
+            claimName: archive-volume-claim
+        - name: telemetry-volume-claim
           persistentVolumeClaim:
-            claimName: volume_telemetry_claim
-        - name: volume_outliers_claim
+            claimName: telemetry-volume-claim
+        - name: outliers-volume-claim
           persistentVolumeClaim:
-            claimName: volume_outliers_claim
+            claimName: outliers-volume-claim
             
