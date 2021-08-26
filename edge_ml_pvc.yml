@@ -7,7 +7,7 @@ spec:
   volumeName: input-volume
   storageClassName: ""
   accessModes:
-    - ReadOnlyMany
+    - ReadWriteMany
   resources:
     requests:
       storage: 5G
