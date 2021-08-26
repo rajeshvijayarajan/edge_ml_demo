@@ -24,7 +24,7 @@ spec:
             - containerPort: 3000
           stdin: true
           volumeMounts:
-            - mountPath: /app/inputs
+            - mountPath: /app/inputs/test
               name: volume_input_claim
       imagePullSecrets:
         - name: regcred 
